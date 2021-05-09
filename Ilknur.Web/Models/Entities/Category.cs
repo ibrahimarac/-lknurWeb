@@ -9,7 +9,6 @@ namespace Ilknur.Web.Models.Entities
 {
     public class Category:AuditableEntity
     {   
-        [Column(name:"CategoryName",TypeName ="varchar(30)")]
         public string Name { get; set; }
 
         public ICollection<Product> Products { get; set; }

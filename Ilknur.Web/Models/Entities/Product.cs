@@ -9,12 +9,10 @@ namespace Ilknur.Web.Models.Entities
 {
     public class Product:AuditableEntity
     {
-        [ForeignKey("Category")]
         public int CategoryId { get; set; }
 
         public Category Category { get; set; }
 
-        [Column(name:"ProductName",TypeName = "varchar(30)")]
         public string Name { get; set; }
 
     }
