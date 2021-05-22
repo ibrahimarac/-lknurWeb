@@ -1,0 +1,12 @@
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\bin\Debug\netcoreapp3.1\Ilknur.Core.dll
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.csprojAssemblyReference.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.AssemblyInfoInputs.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.AssemblyInfo.cs
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\bin\Debug\netcoreapp3.1\Ilknur.Data.Sql.deps.json
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\bin\Debug\netcoreapp3.1\Ilknur.Data.Sql.dll
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\bin\Debug\netcoreapp3.1\Ilknur.Data.Sql.pdb
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\bin\Debug\netcoreapp3.1\Ilknur.Core.pdb
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.csproj.CoreCompileInputs.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.csproj.CopyComplete
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.dll
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Data.Sql\obj\Debug\netcoreapp3.1\Ilknur.Data.Sql.pdb

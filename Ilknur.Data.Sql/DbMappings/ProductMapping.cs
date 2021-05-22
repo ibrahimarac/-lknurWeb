@@ -1,4 +1,5 @@
-﻿using Ilknur.Web.Models.Entities;
+﻿
+using Ilknur.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -6,11 +7,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ilknur.Web.DbMappings
+namespace Ilknur.Data.Sql.DbMappings
 {
-    public class CategoryMapping : IEntityTypeConfiguration<Category>
+    public class ProductMapping : IEntityTypeConfiguration<Product>
     {
-        public void Configure(EntityTypeBuilder<Category> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.HasKey(c => c.Id);
             builder.Property(c => c.Id)
@@ -19,11 +20,7 @@ namespace Ilknur.Web.DbMappings
             builder.Property(c => c.Name)
                 .HasColumnType("varchar(30)")
                 .IsRequired()
-                .HasColumnName("CategoryName");
-
-            builder.HasMany(c => c.Products)
-                .WithOne(p => p.Category)
-                .HasForeignKey("CategoryId");
+                .HasColumnName("ProductName");
 
             builder.Property(c => c.LastupUser)
                 .HasColumnType("varchar(10)")

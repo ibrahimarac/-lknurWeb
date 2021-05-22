@@ -1,11 +1,12 @@
 ﻿using Ilknur.Core.Domain.Entities;
+using Ilknur.Data.Sql.DbMappings;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ilknur.Web.Context
+namespace Ilknur.Data.Sql.Context
 {
     public class IlknurContext:DbContext
     {
@@ -17,7 +18,8 @@ namespace Ilknur.Web.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration<Category>(new CategoryMapping());
+            modelBuilder.ApplyConfiguration<Product>(new ProductMapping());
         }
     }
 }

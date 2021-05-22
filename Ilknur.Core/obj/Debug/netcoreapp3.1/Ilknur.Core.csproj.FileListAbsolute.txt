@@ -1,0 +1,9 @@
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.csprojAssemblyReference.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.AssemblyInfoInputs.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.AssemblyInfo.cs
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.csproj.CoreCompileInputs.cache
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\bin\Debug\netcoreapp3.1\Ilknur.Core.deps.json
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\bin\Debug\netcoreapp3.1\Ilknur.Core.dll
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\bin\Debug\netcoreapp3.1\Ilknur.Core.pdb
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.dll
+D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.pdb

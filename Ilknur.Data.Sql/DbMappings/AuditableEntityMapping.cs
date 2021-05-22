@@ -1,4 +1,4 @@
-﻿using Ilknur.Web.Models.Entities;
+﻿using Ilknur.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -6,20 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ilknur.Web.DbMappings
+namespace Ilknur.Data.Sql.DbMappings
 {
-    public class ProductMapping : IEntityTypeConfiguration<Product>
+    public class AuditableEntityMapping<TEntity> : BaseEntityMapping<TEntity>
+        where TEntity:AuditableEntity
     {
-        public void Configure(EntityTypeBuilder<Product> builder)
+        public override void Configure(EntityTypeBuilder<TEntity> builder)
         {
-            builder.HasKey(c => c.Id);
-            builder.Property(c => c.Id)
-                .UseIdentityColumn(1, 1);
-
-            builder.Property(c => c.Name)
-                .HasColumnType("varchar(30)")
-                .IsRequired()
-                .HasColumnName("ProductName");
+            base.Configure(builder);
 
             builder.Property(c => c.LastupUser)
                 .HasColumnType("varchar(10)")
@@ -34,10 +28,6 @@ namespace Ilknur.Web.DbMappings
 
             builder.Property(c => c.LastupDate)
                 .HasDefaultValueSql("getdate()");
-
-            builder.Property(c => c.IsActive)
-                .IsRequired(false)
-                .HasDefaultValueSql("1");
         }
     }
 }
