@@ -1,5 +1,6 @@
 ﻿using Ilknur.Core.Domain.Entities;
 using Ilknur.Data.Sql.DbMappings;
+using Ilknur.Data.Sql.Seeder;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,12 @@ namespace Ilknur.Data.Sql.Context
         {
             modelBuilder.ApplyConfiguration<Category>(new CategoryMapping());
             modelBuilder.ApplyConfiguration<Product>(new ProductMapping());
+
+            modelBuilder.SeedCategories();
+            modelBuilder.SeedProducts();
         }
+
+
+
     }
 }

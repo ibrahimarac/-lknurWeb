@@ -12,7 +12,7 @@ namespace Ilknur.Core.Domain.Entities
         public string LastupUser { get; set; }
 
         public string CreateUser { get; set; }
-                
+
         public DateTime CreateDate { get; set; }
 
         public DateTime LastupDate { get; set; }
