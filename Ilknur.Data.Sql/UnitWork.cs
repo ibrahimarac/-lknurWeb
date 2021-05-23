@@ -1,6 +1,5 @@
 ﻿using Ilknur.Core;
 using Ilknur.Core.Repositories;
-using Ilknur.Data.Sql.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ilknur.Data.Sql
 {
-    public class UnitWork : IUnitWork<IlknurContext>
+    public class UnitWork : IUnitWork
     {
         public UnitWork(
                             IlknurContext context,
@@ -29,7 +28,6 @@ namespace Ilknur.Data.Sql
 
 
         public IProductRepository Products { get; }
-
 
 
 

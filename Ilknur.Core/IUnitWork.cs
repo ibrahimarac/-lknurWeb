@@ -16,9 +16,4 @@ namespace Ilknur.Core
         Task<bool> CommitAsync();
     }
 
-    public interface IUnitWork<TContext> : IUnitWork where TContext : DbContext
-    {
-        TContext Context { get; }
-    }
-
 }

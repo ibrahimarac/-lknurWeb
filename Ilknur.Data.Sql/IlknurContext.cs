@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ilknur.Data.Sql.Context
+namespace Ilknur.Data.Sql
 {
     public class IlknurContext:DbContext
     {

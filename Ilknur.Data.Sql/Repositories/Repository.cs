@@ -1,6 +1,5 @@
 ﻿
 using Ilknur.Core.Repositories;
-using Ilknur.Data.Sql.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
