@@ -1,6 +1,6 @@
 
 using Ilknur.Data.Sql;
-using Ilknur.Web.ServiceInjection;
+using Ilknur.Web.MvcMiddlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,7 +29,11 @@ namespace Ilknur.Web
         {
             services.AddControllersWithViews();
 
-            services.CreateDbContext<IlknurContext>();
+            services.AddLocalDbContext(Configuration);
+
+            services.AddRepositories();
+
+            services.AddUnitOfWork();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
