@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ilknur.Core.Domain.Entities
 {
-    public abstract class AuditableEntity:IBaseEntity,IAuditableEntity,IDeactivatable
+    public abstract class AuditableRemovableEntity:IBaseEntity,IAuditableEntity
     {
         public int Id { get; set; }
 
@@ -20,15 +20,12 @@ namespace Ilknur.Core.Domain.Entities
 
         public DateTime LastupDate { get; set; }
 
-        public bool IsActive { get; set; }
-
-        public AuditableEntity()
+        public AuditableRemovableEntity()
         {
             CreateDate = DateTime.Now;
             LastupDate = DateTime.Now;
             CreateUser = "admin";
             LastupUser = "admin";
-            IsActive = true;
         }
     }
 }

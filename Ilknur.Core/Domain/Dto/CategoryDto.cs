@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Ilknur.Core.Domain.Dto
 {
-    public class CategoryDto
+    //POCO object
+    //Plain Old Clr Object
+    public class CategoryDto:AuditableDto
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Status { get; set; }
+        public string Name { get; set; }    
     }
 }
