@@ -12,7 +12,10 @@ namespace Ilknur.Web.MvcMiddlewares
         public static IServiceCollection AddAutoMappers(this IServiceCollection services)
         {
             return
-                services.AddAutoMapper(typeof(CategoryMapper));
+                services.AddAutoMapper(
+                    typeof(CategoryMapper),
+                    typeof(Startup)
+                );
         }
     }
 }
