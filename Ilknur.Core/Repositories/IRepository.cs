@@ -11,7 +11,7 @@ namespace Ilknur.Core.Repositories
         #region Select Methods
 
         IEnumerable<TEntity> GetAll(bool isTracking = true);
-        TEntity GetById(int id);
+        TEntity GetById(int id,bool isTracking=true);
         IEnumerable<TEntity> GetByFilter(Expression<Func<TEntity,bool>> filter,
             bool isTracking=true);
         TEntity GetSingle(Expression<Func<TEntity, bool>> filter, bool isTracking = true);

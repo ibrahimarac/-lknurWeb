@@ -9,7 +9,8 @@
 
 <div class="row">
     <div class="col-md-10 offset-1">
-        <form asp-controller="Category" asp-action="Create">            
+        <form asp-controller="Category" asp-action="Edit" asp-route-id="">   
+            <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />

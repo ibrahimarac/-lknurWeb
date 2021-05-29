@@ -37,5 +37,18 @@ namespace Ilknur.Services.Services
             return categoryDtos;
         }
 
+        public CategoryDto GetCategoryById(int? categoryId,bool isTracking=true)
+        {
+            var category=Database.Categories.GetById(categoryId.Value,isTracking);
+            var categoryDto = Mapper.Map<Category, CategoryDto>(category);
+            return categoryDto;
+        }
+
+        public void UpdateCategory(CategoryDto categoryDto)
+        {
+            var category = Mapper.Map<CategoryDto, Category>(categoryDto);
+            Database.Categories.Update(category);
+            Database.Commit();
+        }
     }
 }

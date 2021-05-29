@@ -586,3 +586,7 @@ D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\Ilknur.Web.MvcApplicationPartsAssemblyInfo.cs
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\FluentValidation.dll
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\Razor\Views\Category\Edit.cshtml.g.cs

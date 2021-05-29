@@ -15,7 +15,7 @@ namespace Ilknur.Web.Controllers
         private readonly ICategoryService Categories;
         private readonly IMapper Mapper;
 
-        public CategoryController(ICategoryService categoryService,IMapper mapper)
+        public CategoryController(ICategoryService categoryService, IMapper mapper)
         {
             Categories = categoryService;
             Mapper = mapper;
@@ -26,7 +26,7 @@ namespace Ilknur.Web.Controllers
         public async Task<IActionResult> List()
         {
             //Dto to VM
-            var categoryDtos=await Categories.GetAllCategories();
+            var categoryDtos = await Categories.GetAllCategories();
             var categoryVM = Mapper.Map<IEnumerable<CategoryDto>, IEnumerable<CategoryVM>>(categoryDtos);
             return View(categoryVM);
         }
@@ -42,13 +42,45 @@ namespace Ilknur.Web.Controllers
         [Route("Category/Create")]
         public IActionResult Create(CategoryVM categoryVM)
         {
+            //Validation kontrolünü yapalım
+            if (!ModelState.IsValid)
+                return View(categoryVM);
+
             //VM to Dto
             var categoryDto = Mapper.Map<CategoryVM, CategoryDto>(categoryVM);
             categoryDto.CreateDate = DateTime.Now;
             categoryDto.LastupDate = DateTime.Now;
             categoryDto.CreateUser = "admin";
             categoryDto.LastupUser = "admin";
+
             Categories.AddCategory(categoryDto);
+            return RedirectToAction("List");
+        }
+
+        [HttpGet]
+        [Route("Category/Edit/{id:int?}")]
+        public IActionResult Edit(int? id)
+        {
+            var categoryDto = Categories.GetCategoryById(id);
+            var categoryVM = Mapper.Map<CategoryDto, CategoryVM>(categoryDto);
+            return View(categoryVM);
+        }
+
+        [HttpPost]
+        [Route("Category/Edit")]
+        public IActionResult Edit(CategoryVM categoryVM)
+        {
+            if (!ModelState.IsValid)
+                return View(categoryVM);
+
+            var categoryDto = Categories.GetCategoryById(categoryVM.Id,isTracking:false);
+            categoryDto.Name = categoryVM.Name;
+            categoryDto.IsActive = categoryVM.IsActive;
+            categoryDto.LastupDate = DateTime.Now;
+            categoryDto.LastupUser = "admin";
+            
+
+            Categories.UpdateCategory(categoryDto);
             return RedirectToAction("List");
         }
 

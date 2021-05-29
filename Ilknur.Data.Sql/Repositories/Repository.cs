@@ -42,9 +42,12 @@ namespace Ilknur.Data.Sql.Repositories
             return isTracking ? await DbSet.Where(filter).ToListAsync() : await DbSet.AsNoTracking().Where(filter).ToListAsync();
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetById(int id,bool isTracking=true)
         {
-            return DbSet.Find(id);
+            var entity = DbSet.Find(id);
+            if (!isTracking && entity != null)
+                Context.Entry(entity).State = EntityState.Detached;
+            return entity;
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
