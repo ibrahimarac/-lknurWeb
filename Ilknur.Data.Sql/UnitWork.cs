@@ -12,12 +12,10 @@ namespace Ilknur.Data.Sql
     {
         public UnitWork(
                             IlknurContext context,
-                            ICategoryRepository categoryRepository,
-                            IProductRepository productRepository
+                            ICategoryRepository categoryRepository
                         )
         {
             Categories = categoryRepository ?? throw new ArgumentNullException(nameof(categoryRepository));
-            Products = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
             Context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
@@ -25,9 +23,6 @@ namespace Ilknur.Data.Sql
 
 
         public ICategoryRepository Categories { get; }
-
-
-        public IProductRepository Products { get; }
 
 
 
@@ -79,7 +74,6 @@ namespace Ilknur.Data.Sql
                 if(disposing)
                 {
                     Categories.Dispose();
-                    Products.Dispose();
                     Context.Dispose();
                 }
                 disposed = true;

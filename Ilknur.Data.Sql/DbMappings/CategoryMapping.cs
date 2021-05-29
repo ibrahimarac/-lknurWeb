@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ilknur.Data.Sql.DbMappings
 {
-    public class CategoryMapping : AuditableEntityMapping<Category>
+    public class CategoryMapping : TrackablePermanentEntityMapping<Category>
     {
         public override void Configure(EntityTypeBuilder<Category> builder)
         {
@@ -18,10 +18,6 @@ namespace Ilknur.Data.Sql.DbMappings
                 .HasColumnType("varchar(30)")
                 .IsRequired()
                 .HasColumnName("CategoryName");
-
-            builder.HasMany(c => c.Products)
-                .WithOne(p => p.Category)
-                .HasForeignKey("CategoryId");
         }
     }
 }

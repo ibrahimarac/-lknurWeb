@@ -7,3 +7,12 @@ D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\net
 D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.dll
 D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.pdb
 D:\Kurslar\20 Şubat\12. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.csprojAssemblyReference.cache
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\bin\Debug\netcoreapp3.1\Ilknur.Utils.deps.json
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\bin\Debug\netcoreapp3.1\Ilknur.Utils.dll
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\bin\Debug\netcoreapp3.1\Ilknur.Utils.pdb
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.csprojAssemblyReference.cache
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.AssemblyInfoInputs.cache
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.AssemblyInfo.cs
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.csproj.CoreCompileInputs.cache
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.dll
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Utils\obj\Debug\netcoreapp3.1\Ilknur.Utils.pdb

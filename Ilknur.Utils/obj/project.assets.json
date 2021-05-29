@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Kurslar\\20 Şubat\\12. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
+      "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
       "projectName": "Ilknur.Utils",
-      "projectPath": "D:\\Kurslar\\20 Şubat\\12. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
+      "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
       "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-      "outputPath": "D:\\Kurslar\\20 Şubat\\12. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\obj\\",
+      "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

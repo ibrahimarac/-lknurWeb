@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ilknur.Core.Domain.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,15 +8,14 @@ using System.Threading.Tasks;
 
 namespace Ilknur.Core.Domain.Entities
 {
-    public class Category:AuditableEntity
+    public class Category:TrackablePermanentEntity
     {   
         public string Name { get; set; }
 
-        public ICollection<Product> Products { get; set; }
 
         public Category()
         {
-            Products = new HashSet<Product>();
+
         }
     }
 }

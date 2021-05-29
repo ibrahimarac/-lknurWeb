@@ -15,17 +15,30 @@ namespace Ilknur.Data.Sql.Seeder
                 .HasData(
                     new Category
                     {
-                        Id=1,Name="Kategori 1"
+                        Id=1,
+                        Name="Kategori 1",
+                        CreateUser="admin",
+                        LastupUser="admin",
+                        CreateDate=DateTime.Now,
+                        LastupDate=DateTime.Now
                     },
                     new Category
                     {
                         Id = 2,
-                        Name = "Kategori 2"
+                        Name = "Kategori 2",
+                        CreateUser = "admin",
+                        LastupUser = "admin",
+                        CreateDate = DateTime.Now,
+                        LastupDate = DateTime.Now
                     },
                     new Category
                     {
                         Id = 3,
-                        Name = "Kategori 3"
+                        Name = "Kategori 3",
+                        CreateUser = "admin",
+                        LastupUser = "admin",
+                        CreateDate = DateTime.Now,
+                        LastupDate = DateTime.Now
                     }
                 );
         }

@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Ilknur.Core.Domain.Abstractions
 {
-    public interface IDeactivatable
+    public interface IPermanent:IBaseEntity
     {
-        bool IsActive { get; set; }
+        bool? IsActive { get; set; }
     }
 }

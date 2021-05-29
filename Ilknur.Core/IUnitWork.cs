@@ -10,7 +10,6 @@ namespace Ilknur.Core
     public interface IUnitWork:IDisposable
     {
         ICategoryRepository Categories { get; }
-        IProductRepository Products { get; }
 
         bool Commit();
         Task<bool> CommitAsync();

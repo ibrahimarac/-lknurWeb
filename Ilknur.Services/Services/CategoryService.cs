@@ -7,26 +7,27 @@ using System.Threading.Tasks;
 using Ilknur.Core.Domain.Entities;
 using System.Linq;
 using Ilknur.Core.Services;
+using AutoMapper;
+using Ilknur.Core.Mappers;
 
 namespace Ilknur.Services.Services
 {
     public class CategoryService : ICategoryService
     {
         private readonly IUnitWork Database;
-
-        public CategoryService(IUnitWork uWork)
+        private readonly IMapper Mapper;
+        
+        public CategoryService(IUnitWork uWork, IMapper mapper)
         {
             Database = uWork;
+            Mapper = mapper;
         }
 
         public async Task<IEnumerable<CategoryDto>> GetAllCategories()
         {
             var categories = await Database.Categories.GetAllAsync(false);
-            return categories.Select(c => new CategoryDto
-            {
-                Id=c.Id,
-                Name=c.Name
-            });
+            var categoryDtos=Mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDto>>(categories);
+            return categoryDtos;
         }
 
     }

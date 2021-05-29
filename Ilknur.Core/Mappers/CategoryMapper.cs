@@ -12,13 +12,10 @@ namespace Ilknur.Core.Mappers
         public CategoryMapper()
         {
             //Entity To Dto
-            CreateMap<Category, CategoryDto>()
-                .ForMember(dto => dto.Status, opt => opt.MapFrom(entity => entity.IsActive.Value?1:0));
-
+            CreateMap<Category, CategoryDto>();
 
             //Dto to Entity
-            CreateMap<CategoryDto, Category>()
-                .ForMember(entity => entity.IsActive, opt => opt.MapFrom(dto => dto.Status==1?true:false));
+            CreateMap<CategoryDto, Category>();
         }
     }
 }

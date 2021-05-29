@@ -1,4 +1,5 @@
 
+using Ilknur.Core;
 using Ilknur.Data.Sql;
 using Ilknur.Web.MvcMiddlewares;
 using Microsoft.AspNetCore.Builder;
@@ -34,6 +35,11 @@ namespace Ilknur.Web
             services.AddRepositories();
 
             services.AddUnitOfWork();
+
+            services.AddAutoMappers();
+
+            services.AddBusinessServices();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
