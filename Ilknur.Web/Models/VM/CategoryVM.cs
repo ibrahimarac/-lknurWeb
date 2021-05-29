@@ -15,6 +15,6 @@ namespace Ilknur.Web.Models.VM
         public string Name { get; set; }
 
         [Display(Name="Durumu")]
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
     }
 }

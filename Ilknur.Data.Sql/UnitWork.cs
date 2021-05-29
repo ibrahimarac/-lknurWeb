@@ -34,6 +34,7 @@ namespace Ilknur.Data.Sql
                 try
                 {
                     numRows = Context.SaveChanges();
+                    transaction.Commit();
                 }
                 catch (Exception ex)
                 {

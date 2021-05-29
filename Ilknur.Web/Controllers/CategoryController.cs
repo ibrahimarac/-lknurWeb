@@ -25,6 +25,7 @@ namespace Ilknur.Web.Controllers
         [Route("Category/List")]
         public async Task<IActionResult> List()
         {
+            //Dto to VM
             var categoryDtos=await Categories.GetAllCategories();
             var categoryVM = Mapper.Map<IEnumerable<CategoryDto>, IEnumerable<CategoryVM>>(categoryDtos);
             return View(categoryVM);
@@ -41,7 +42,14 @@ namespace Ilknur.Web.Controllers
         [Route("Category/Create")]
         public IActionResult Create(CategoryVM categoryVM)
         {
-            return View();
+            //VM to Dto
+            var categoryDto = Mapper.Map<CategoryVM, CategoryDto>(categoryVM);
+            categoryDto.CreateDate = DateTime.Now;
+            categoryDto.LastupDate = DateTime.Now;
+            categoryDto.CreateUser = "admin";
+            categoryDto.LastupUser = "admin";
+            Categories.AddCategory(categoryDto);
+            return RedirectToAction("List");
         }
 
     }

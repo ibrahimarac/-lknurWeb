@@ -9,5 +9,7 @@ namespace Ilknur.Core.Services
     public interface ICategoryService
     {
         Task<IEnumerable<CategoryDto>> GetAllCategories();
+
+        void AddCategory(CategoryDto categoryDto);
     }
 }

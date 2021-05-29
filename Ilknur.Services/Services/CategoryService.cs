@@ -23,6 +23,13 @@ namespace Ilknur.Services.Services
             Mapper = mapper;
         }
 
+        public void AddCategory(CategoryDto categoryDto)
+        {
+            var category = Mapper.Map<CategoryDto, Category>(categoryDto);
+            Database.Categories.Insert(category);
+            Database.Commit();
+        }
+
         public async Task<IEnumerable<CategoryDto>> GetAllCategories()
         {
             var categories = await Database.Categories.GetAllAsync(false);

@@ -15,3 +15,4 @@ D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netc
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.csproj.CoreCompileInputs.cache
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.dll
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.pdb
+D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Core\obj\Debug\netcoreapp3.1\Ilknur.Core.csprojAssemblyReference.cache
