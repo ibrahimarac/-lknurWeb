@@ -9,6 +9,7 @@ using System.Linq;
 using Ilknur.Core.Services;
 using AutoMapper;
 using Ilknur.Core.Mappers;
+using Ilknur.Core.Domain.Common;
 
 namespace Ilknur.Services.Services
 {
@@ -39,13 +40,19 @@ namespace Ilknur.Services.Services
 
         public CategoryDto GetCategoryById(int? categoryId,bool isTracking=true)
         {
+            if (!categoryId.HasValue)
+                throw new ParameterException("Id", "Category", "Kategori numarası gönderilmedi.");
             var category=Database.Categories.GetById(categoryId.Value,isTracking);
+            if(category==null)
+                throw new ParameterException("Id", "Category", "Gönderilen kategori numarası geçerli değil.");
             var categoryDto = Mapper.Map<Category, CategoryDto>(category);
             return categoryDto;
         }
 
         public void UpdateCategory(CategoryDto categoryDto)
         {
+            if (categoryDto.Id == 0)
+                throw new ParameterException("Id", "Category", "Güncellenecek kategori numarası gönderilmedi.");
             var category = Mapper.Map<CategoryDto, Category>(categoryDto);
             Database.Categories.Update(category);
             Database.Commit();

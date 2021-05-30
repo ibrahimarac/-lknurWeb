@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Ilknur.Core.Domain.Common;
 using Ilknur.Core.Domain.Dto;
+using Ilknur.Core.Loggers;
 using Ilknur.Core.Services;
 using Ilknur.Utils.Extensions;
 using Ilknur.Web.Models.VM;
@@ -18,12 +19,12 @@ namespace Ilknur.Web.Controllers
     public class ErrorController : Controller
     {
         private readonly IMapper Mapper;
-        private readonly IErrorService ErrorService;
+        private readonly IExceptionLogger ErrorLogger;
 
-        public ErrorController(IMapper mapper,IErrorService errorService)
+        public ErrorController(IMapper mapper,IExceptionLogger errorLogger)
         {
             Mapper = mapper;
-            ErrorService = errorService;
+            ErrorLogger = errorLogger;
         }
 
         [Route("Error/Http500")]
@@ -32,23 +33,28 @@ namespace Ilknur.Web.Controllers
             IExceptionHandlerPathFeature exceptionHandlerPath = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
             IHttpRequestFeature httpRequestFeature = HttpContext.Features.Get<IHttpRequestFeature>();
 
+            var jsonSerializerSettings = new JsonSerializerSettings();
+            //Json serileştirme ayarlarımız
+            jsonSerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            jsonSerializerSettings.Formatting = Formatting.Indented;
+
             var errorDto = new ErrorDto
             {
                 CreateDate = DateTime.Now,
                 QueryString = exceptionHandlerPath.Path.QueryStringFromUrl(),
-                IsAjaxRequest= HttpContext.Request.IsAjaxRequest(),
-                RequestType=Enum.Parse<RequestType>(httpRequestFeature.Method),
-                StatusCode=500,
-                Url=exceptionHandlerPath.Path,
-                Username="admin",
-                Exception=JsonConvert.SerializeObject(exceptionHandlerPath.Error)
+                IsAjaxRequest = HttpContext.Request.IsAjaxRequest(),
+                RequestType = Enum.Parse<RequestType>(httpRequestFeature.Method),
+                StatusCode = 500,
+                Url = exceptionHandlerPath.Path,
+                Username = "admin",
+                Exception = JsonConvert.SerializeObject(exceptionHandlerPath.Error, jsonSerializerSettings)
             };
 
             //Hatayı veritabanına kaydet
-            ErrorService.AddError(errorDto);
+            ErrorLogger.LogException(errorDto);
 
             var errorVM = Mapper.Map<ErrorDto, ErrorVM>(errorDto);
-            errorVM.Message = "Kayıt esnasında bir hata oluştu. Hata kayıt altına alındı. Lütfen sistem yöneticinizle görüşün.";
+            errorVM.Message = exceptionHandlerPath.Error.Message;
             
             return View("_Error",errorVM);
         }
