@@ -13,7 +13,9 @@ namespace Ilknur.Web.MvcMiddlewares
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             return
-                services.AddScoped<ICategoryRepository, CategoryRepository>();
+                services
+                    .AddScoped<ICategoryRepository, CategoryRepository>()
+                    .AddScoped<IErrorRepository, ErrorRepository>();
         }
     }
 }

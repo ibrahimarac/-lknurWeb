@@ -64,30 +64,75 @@ namespace Ilknur.Data.Sql.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2021, 5, 29, 14, 51, 59, 476, DateTimeKind.Local).AddTicks(4223),
+                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 89, DateTimeKind.Local).AddTicks(8231),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 29, 14, 51, 59, 477, DateTimeKind.Local).AddTicks(6750),
+                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(8499),
                             LastupUser = "admin",
                             Name = "Kategori 1"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2021, 5, 29, 14, 51, 59, 477, DateTimeKind.Local).AddTicks(7658),
+                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9109),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 29, 14, 51, 59, 477, DateTimeKind.Local).AddTicks(7665),
+                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9114),
                             LastupUser = "admin",
                             Name = "Kategori 2"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2021, 5, 29, 14, 51, 59, 477, DateTimeKind.Local).AddTicks(7669),
+                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9117),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 29, 14, 51, 59, 477, DateTimeKind.Local).AddTicks(7670),
+                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9118),
                             LastupUser = "admin",
                             Name = "Kategori 3"
                         });
+                });
+
+            modelBuilder.Entity("Ilknur.Core.Domain.Entities.Error", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreateDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getdate()");
+
+                    b.Property<string>("Exception")
+                        .IsRequired()
+                        .HasColumnType("varchar(max)");
+
+                    b.Property<bool>("IsAjaxRequest")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("0");
+
+                    b.Property<string>("QueryString")
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("RequestType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StatusCode")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("varchar(300)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Errors");
                 });
 #pragma warning restore 612, 618
         }

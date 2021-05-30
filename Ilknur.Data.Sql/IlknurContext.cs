@@ -15,10 +15,13 @@ namespace Ilknur.Data.Sql
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Error> Errors { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration<Category>(new CategoryMapping());
+            modelBuilder.ApplyConfiguration(new CategoryMapping());
+
+            modelBuilder.ApplyConfiguration(new ErrorMapping());
 
             modelBuilder.SeedCategories();
         }

@@ -13,7 +13,9 @@ namespace Ilknur.Web.MvcMiddlewares
         public static IServiceCollection AddBusinessServices(this IServiceCollection services)
         {
             return
-                services.AddScoped<ICategoryService, CategoryService>();
+                services
+                    .AddScoped<ICategoryService, CategoryService>()
+                    .AddScoped<IErrorService, ErrorService>();
         }
     }
 }

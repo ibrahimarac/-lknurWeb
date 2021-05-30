@@ -12,10 +12,12 @@ namespace Ilknur.Data.Sql
     {
         public UnitWork(
                             IlknurContext context,
-                            ICategoryRepository categoryRepository
+                            ICategoryRepository categoryRepository,
+                            IErrorRepository errorRepository
                         )
         {
             Categories = categoryRepository ?? throw new ArgumentNullException(nameof(categoryRepository));
+            Errors = errorRepository ?? throw new ArgumentNullException(nameof(errorRepository));
             Context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
@@ -23,7 +25,7 @@ namespace Ilknur.Data.Sql
 
 
         public ICategoryRepository Categories { get; }
-
+        public IErrorRepository Errors { get; }
 
 
         public bool Commit()
@@ -39,6 +41,7 @@ namespace Ilknur.Data.Sql
                 catch (Exception ex)
                 {
                     transaction.Rollback();
+                    Context.ChangeTracker.Clear();
                     throw ex;
                 }
             }

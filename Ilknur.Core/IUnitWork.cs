@@ -11,6 +11,8 @@ namespace Ilknur.Core
     {
         ICategoryRepository Categories { get; }
 
+        IErrorRepository Errors { get; }
+
         bool Commit();
         Task<bool> CommitAsync();
     }

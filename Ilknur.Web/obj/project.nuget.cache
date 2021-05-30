@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A3ww7QVwSDUMtUPiwgi6BHEcbPlfGM+0NcbmFC1mUr3NQj2yXvpmTpo/udnxqDt6l3uuPWobKrcmc7X22bvbKQ==",
+  "dgSpecHash": "q3sjUo/XsoD+WYN2EnVGvPdWbMs/4ZXh99S86MboSQgMPLdM0p2pba++0PgvyaEN8/yoYAWQB9XBXrTAwTDPvA==",
   "success": true,
   "projectFilePath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\Ibrahim\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.2.0\\fluentvalidation.dependencyinjectionextensions.10.2.0.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.6\\microsoft.aspnetcore.mvc.razor.extensions.5.0.6.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.6\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.6.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
