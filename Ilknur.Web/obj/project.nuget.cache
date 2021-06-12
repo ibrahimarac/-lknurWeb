@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LP4cBMbGJ8B9zagE4ilSgY1Rel1hiLWQZJjHQCjss6GLzkkW0yluMebMkN+3wHP/RPHfEEGW4j88n5Q8fpsRrw==",
+  "dgSpecHash": "vMweJNHYmMEfuKnwkJuksFeXIYwbqIDS13evYMg+EaNqji+9Px6fW31brIt7Aeqx+mmoHpH3V6mdPW+R9Pk72A==",
   "success": true,
-  "projectFilePath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
+  "projectFilePath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibrahim\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

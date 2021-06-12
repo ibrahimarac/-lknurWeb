@@ -64,27 +64,27 @@ namespace Ilknur.Data.Sql.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 89, DateTimeKind.Local).AddTicks(8231),
+                            CreateDate = new DateTime(2021, 6, 12, 15, 51, 40, 227, DateTimeKind.Local).AddTicks(1654),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(8499),
+                            LastupDate = new DateTime(2021, 6, 12, 15, 51, 40, 228, DateTimeKind.Local).AddTicks(2599),
                             LastupUser = "admin",
                             Name = "Kategori 1"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9109),
+                            CreateDate = new DateTime(2021, 6, 12, 15, 51, 40, 228, DateTimeKind.Local).AddTicks(3327),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9114),
+                            LastupDate = new DateTime(2021, 6, 12, 15, 51, 40, 228, DateTimeKind.Local).AddTicks(3332),
                             LastupUser = "admin",
                             Name = "Kategori 2"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9117),
+                            CreateDate = new DateTime(2021, 6, 12, 15, 51, 40, 228, DateTimeKind.Local).AddTicks(3335),
                             CreateUser = "admin",
-                            LastupDate = new DateTime(2021, 5, 30, 15, 16, 30, 90, DateTimeKind.Local).AddTicks(9118),
+                            LastupDate = new DateTime(2021, 6, 12, 15, 51, 40, 228, DateTimeKind.Local).AddTicks(3336),
                             LastupUser = "admin",
                             Name = "Kategori 3"
                         });
@@ -133,6 +133,39 @@ namespace Ilknur.Data.Sql.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Errors");
+                });
+
+            modelBuilder.Entity("Ilknur.Core.Domain.Entities.Log", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("EntityName")
+                        .IsRequired()
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<DateTime>("LogDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getdate()");
+
+                    b.Property<string>("New")
+                        .HasColumnType("varchar(max)");
+
+                    b.Property<string>("Old")
+                        .HasColumnType("varchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("varchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CrudLogs");
                 });
 #pragma warning restore 612, 618
         }

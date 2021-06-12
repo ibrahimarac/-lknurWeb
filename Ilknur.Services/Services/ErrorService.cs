@@ -23,7 +23,7 @@ namespace Ilknur.Services.Services
         public void AddError(ErrorDto errorDto)
         {
             var error = Mapper.Map<ErrorDto, Error>(errorDto);
-            Database.Errors.Insert(error);
+            Database.ErrorRepo.Insert(error);
             Database.Commit();
         }
     }

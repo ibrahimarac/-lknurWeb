@@ -31,7 +31,10 @@ namespace Ilknur.Core.Repositories
         #region Update
 
         void Insert(TEntity entity);
+        void Insert(IEnumerable<TEntity> entities);
+
         void Update(TEntity entity);
+
         void Delete(TEntity entity);
 
         #endregion

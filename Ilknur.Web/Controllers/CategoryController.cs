@@ -52,6 +52,8 @@ namespace Ilknur.Web.Controllers
             categoryDto.LastupDate = DateTime.Now;
             categoryDto.CreateUser = "admin";
             categoryDto.LastupUser = "admin";
+
+            Categories.AddCategory(categoryDto);
                        
             return RedirectToAction("List");
         }

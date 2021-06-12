@@ -15,7 +15,8 @@ namespace Ilknur.Web.MvcMiddlewares
             return
                 services
                     .AddScoped<ICategoryService, CategoryService>()
-                    .AddScoped<IErrorService, ErrorService>();
+                    .AddScoped<IErrorService, ErrorService>()
+                    .AddScoped<ILogCrudService, LogCrudService>();
         }
     }
 }

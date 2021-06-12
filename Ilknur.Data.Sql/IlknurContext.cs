@@ -16,12 +16,15 @@ namespace Ilknur.Data.Sql
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Error> Errors { get; set; }
+        public DbSet<Log> CrudLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CategoryMapping());
 
             modelBuilder.ApplyConfiguration(new ErrorMapping());
+
+            modelBuilder.ApplyConfiguration(new LogMapping());
 
             modelBuilder.SeedCategories();
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DPmQvKuVT2blfk8txn8WH3QMsjieeWZiyWrRVhO8SP2AKrvg2ipGGPjFdiGwRng62Dfc4BoBxipi72fboRWqpw==",
+  "dgSpecHash": "HqcSw9KQ4zvWCedGNywgx6N3Snea+ftXaw7vPorrfBiWoUQo1J7fibLoGbLxAy+O/YoPNlkbH/UPP+ig6BqhIA==",
   "success": true,
-  "projectFilePath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
+  "projectFilePath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibrahim\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

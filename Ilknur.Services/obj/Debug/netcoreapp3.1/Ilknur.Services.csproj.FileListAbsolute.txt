@@ -22,3 +22,15 @@ D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.csproj.CopyComplete
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.dll
 D:\Kurslar\20 Şubat\13. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.pdb
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\bin\Debug\netcoreapp3.1\Ilknur.Services.deps.json
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\bin\Debug\netcoreapp3.1\Ilknur.Services.dll
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\bin\Debug\netcoreapp3.1\Ilknur.Services.pdb
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\bin\Debug\netcoreapp3.1\Ilknur.Core.dll
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\bin\Debug\netcoreapp3.1\Ilknur.Core.pdb
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.csprojAssemblyReference.cache
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.AssemblyInfoInputs.cache
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.AssemblyInfo.cs
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.csproj.CoreCompileInputs.cache
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.csproj.CopyComplete
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.dll
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Services\obj\Debug\netcoreapp3.1\Ilknur.Services.pdb

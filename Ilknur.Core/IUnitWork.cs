@@ -9,9 +9,11 @@ namespace Ilknur.Core
 {
     public interface IUnitWork:IDisposable
     {
-        ICategoryRepository Categories { get; }
+        ICategoryRepository CategoryRepo { get; }
 
-        IErrorRepository Errors { get; }
+        IErrorRepository ErrorRepo { get; }
+
+        ICrudLoggerRepository CrudLoggerRepo { get; set; }
 
         bool Commit();
         Task<bool> CommitAsync();

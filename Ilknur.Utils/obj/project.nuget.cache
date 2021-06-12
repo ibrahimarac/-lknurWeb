@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IO/5xWLo5SvxwSdP5swEceBpo5r9fj/BzKCpRxPbcMXhDH/aiVL5X1Ab4h4yO7ffpFA4QWWqeHrVS+orAkkOyA==",
+  "dgSpecHash": "ZhDMpbT98JAtrOBSOUG8oQwRpMePt0uBav8rkpG2S7wVuNls5r8THLLoQuERI0noaBQI9l6GSq1ZrrGS6Xs6Ww==",
   "success": true,
-  "projectFilePath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
+  "projectFilePath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibrahim\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

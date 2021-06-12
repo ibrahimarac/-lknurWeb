@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj": {}
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj": {}
   },
   "projects": {
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj",
+        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj",
         "projectName": "Ilknur.Core",
-        "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj",
+        "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\obj\\",
+        "outputPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -75,18 +75,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj": {
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
+        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
         "projectName": "Ilknur.Data.Sql",
-        "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
+        "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\obj\\",
+        "outputPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -106,8 +106,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
               }
             }
           }
@@ -152,18 +152,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj": {
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
+        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
         "projectName": "Ilknur.Services",
-        "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
+        "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\obj\\",
+        "outputPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -183,8 +183,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
               }
             }
           }
@@ -219,18 +219,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj": {
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
+        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
         "projectName": "Ilknur.Utils",
-        "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
+        "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\obj\\",
+        "outputPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -250,8 +250,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
               }
             }
           }
@@ -286,18 +286,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj": {
+    "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
+        "projectUniqueName": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
         "projectName": "Ilknur.Web",
-        "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
+        "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\Ilknur.Web.csproj",
         "packagesPath": "C:\\Users\\Ibrahim\\.nuget\\packages\\",
-        "outputPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\obj\\",
+        "outputPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -317,17 +317,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Core\\Ilknur.Core.csproj"
               },
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Data.Sql\\Ilknur.Data.Sql.csproj"
               },
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj"
               },
-              "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj": {
-                "projectPath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj"
+              "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj": {
+                "projectPath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Utils\\Ilknur.Utils.csproj"
               }
             }
           }
@@ -385,7 +385,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -27,13 +27,13 @@ namespace Ilknur.Services.Services
         public void AddCategory(CategoryDto categoryDto)
         {
             var category = Mapper.Map<CategoryDto, Category>(categoryDto);
-            Database.Categories.Insert(category);
+            Database.CategoryRepo.Insert(category);
             Database.Commit();
         }
 
         public async Task<IEnumerable<CategoryDto>> GetAllCategories()
         {
-            var categories = await Database.Categories.GetAllAsync(false);
+            var categories = await Database.CategoryRepo.GetAllAsync(false);
             var categoryDtos=Mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDto>>(categories);
             return categoryDtos;
         }
@@ -42,7 +42,7 @@ namespace Ilknur.Services.Services
         {
             if (!categoryId.HasValue)
                 throw new ParameterException("Id", "Category", "Kategori numarası gönderilmedi.");
-            var category=Database.Categories.GetById(categoryId.Value,isTracking);
+            var category=Database.CategoryRepo.GetById(categoryId.Value,isTracking);
             if(category==null)
                 throw new ParameterException("Id", "Category", "Gönderilen kategori numarası geçerli değil.");
             var categoryDto = Mapper.Map<Category, CategoryDto>(category);
@@ -54,7 +54,7 @@ namespace Ilknur.Services.Services
             if (categoryDto.Id == 0)
                 throw new ParameterException("Id", "Category", "Güncellenecek kategori numarası gönderilmedi.");
             var category = Mapper.Map<CategoryDto, Category>(categoryDto);
-            Database.Categories.Update(category);
+            Database.CategoryRepo.Update(category);
             Database.Commit();
         }
     }

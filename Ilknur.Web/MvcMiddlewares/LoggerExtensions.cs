@@ -16,7 +16,8 @@ namespace Ilknur.Web.MvcMiddlewares
         {
             return
                 services
-                    .AddScoped<IExceptionLogger, DbExceptionLogger>();
+                    .AddScoped<IExceptionLogger, DbExceptionLogger>()
+                    .AddScoped<ICrudOperationLogger, DbCrudOperationLogger>();
         }
     }
 }

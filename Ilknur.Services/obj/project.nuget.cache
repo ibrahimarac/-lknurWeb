@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o33w9/ecT8k6qfJTzUXQo5O+b2bxSfH3VwY6SYnBEKjaH1q8o3tQPdcMJBYFw8KX1myVOVwO0zf9vW3/uQic8g==",
+  "dgSpecHash": "JQMquLXIXJjfXwC4mYoi3kmAig7bQRxQgT7/cEaSL2n5/X91oRZzO06ZuDq/cA9ra6fgkm/lz2GH1WPjHBls6A==",
   "success": true,
-  "projectFilePath": "D:\\Kurslar\\20 Şubat\\13. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
+  "projectFilePath": "D:\\Kurslar\\20 Şubat\\14. Hafta\\Uygulamalar\\Ilknur.Web\\Ilknur.Services\\Ilknur.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibrahim\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Ibrahim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

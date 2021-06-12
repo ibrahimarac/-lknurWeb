@@ -77,6 +77,11 @@ namespace Ilknur.Data.Sql.Repositories
             DbSet.Add(entity);
         }
 
+        public void Insert(IEnumerable<TEntity> entities)
+        {
+            DbSet.AddRange(entities);
+        }
+
 
         public void Update(TEntity entity)
         {
@@ -106,5 +111,6 @@ namespace Ilknur.Data.Sql.Repositories
             GC.SuppressFinalize(this);
         }
 
+       
     }
 }
