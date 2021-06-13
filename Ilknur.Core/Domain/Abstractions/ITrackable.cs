@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Ilknur.Core.Domain.Abstractions
 {
-    public interface ITrackable:IBaseEntity
+    public interface ITrackable
     {
         string CreateUser { get; set; }
         string LastupUser { get; set; }

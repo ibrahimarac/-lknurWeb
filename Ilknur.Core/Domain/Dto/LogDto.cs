@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Ilknur.Core.Domain.Dto
 {
-    public class LogDto : BaseDto
+    public class LogDto : NonTrackableDto
     {
         public string Username { get; set; }
         public string EntityName { get; set; }

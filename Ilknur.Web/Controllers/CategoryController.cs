@@ -48,10 +48,6 @@ namespace Ilknur.Web.Controllers
 
             //VM to Dto
             var categoryDto = Mapper.Map<CategoryVM, CategoryDto>(categoryVM);
-            categoryDto.CreateDate = DateTime.Now;
-            categoryDto.LastupDate = DateTime.Now;
-            categoryDto.CreateUser = "admin";
-            categoryDto.LastupUser = "admin";
 
             Categories.AddCategory(categoryDto);
                        
@@ -77,10 +73,7 @@ namespace Ilknur.Web.Controllers
             var categoryDto = Categories.GetCategoryById(categoryVM.Id,isTracking:false);
             categoryDto.Name = categoryVM.Name;
             categoryDto.IsActive = categoryVM.IsActive;
-            categoryDto.LastupDate = DateTime.Now;
-            categoryDto.LastupUser = "admin";
-            
-
+           
             Categories.UpdateCategory(categoryDto);
             return RedirectToAction("List");
         }

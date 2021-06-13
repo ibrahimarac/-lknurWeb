@@ -8,10 +8,19 @@ using System.Threading.Tasks;
 
 namespace Ilknur.Core.Domain.Entities
 {
-    public class Category:TrackablePermanentEntity
+    public class Category:BaseEntity,IPermanent,ITrackable
     {   
         public string Name { get; set; }
 
+        public bool? IsActive { get; set; }
+
+        public string CreateUser { get; set; }
+
+        public string LastupUser { get; set; }
+
+        public DateTime CreateDate { get; set; }
+
+        public DateTime LastupDate { get; set; }
 
         public Category()
         {

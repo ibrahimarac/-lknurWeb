@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ilknur.Core.Domain.Dto
 {
-    public class ErrorDto:BaseDto
+    public class ErrorDto:NonTrackableDto
     {
         public string Username { get; set; }
         public string Url { get; set; }
