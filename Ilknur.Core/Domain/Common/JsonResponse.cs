@@ -11,9 +11,5 @@ namespace Ilknur.Core.Domain.Common
         public object Result { get; set; }
     }
 
-    public enum JsonResponseStatus
-    {
-        Ok=1,
-        Error=2
-    }
+   
 }

@@ -12,4 +12,17 @@ namespace Ilknur.Core.Domain.Common
         PATCH,
         DELETE
     }
+
+    public enum JsonResponseStatus
+    {
+        Ok = 1,
+        Error = 2
+    }
+
+    public enum JConfirmMessageType
+    {
+        Success,
+        Error,
+        Warning
+    }
 }

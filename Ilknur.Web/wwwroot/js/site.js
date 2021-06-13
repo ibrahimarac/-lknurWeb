@@ -47,6 +47,15 @@ $.ShowError = function (title, content) {
     });
 }
 
+$.ShowWarning = function (title, content) {
+    $.alert({
+        title: title,
+        content: content,
+        closeIcon: true,
+        type: 'orange'
+    });
+}
+
 $.AjaxDelete = function (trigger, url) {
 
     var reqData = {

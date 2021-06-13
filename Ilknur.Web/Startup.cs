@@ -1,6 +1,7 @@
 
 using Ilknur.Core;
 using Ilknur.Data.Sql;
+using Ilknur.Utils.Helpers;
 using Ilknur.Web.MvcMiddlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -60,6 +61,8 @@ namespace Ilknur.Web
             //// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             //app.UseHsts();
             //}
+
+            ServiceActivator.Configure(app.ApplicationServices);
 
             app.UseExceptionHandler("/Error/Http500"); //500 numaralý kod çalýþtýrma hatalarý için
 

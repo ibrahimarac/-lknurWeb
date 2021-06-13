@@ -54,6 +54,12 @@
     <script src="~/lib/jconfirm/jquery-confirm.min.js"></script>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
+
+    @{ 
+        await Html.RenderPartialAsync("_MessagePartial");
+    }
+
 </body>
 </html>

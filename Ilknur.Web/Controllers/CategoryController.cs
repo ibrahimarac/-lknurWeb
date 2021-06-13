@@ -2,6 +2,7 @@
 using Ilknur.Core.Domain.Common;
 using Ilknur.Core.Domain.Dto;
 using Ilknur.Core.Services;
+using Ilknur.Utils.Extensions;
 using Ilknur.Web.Models.VM;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -52,7 +53,8 @@ namespace Ilknur.Web.Controllers
 
             Categories.AddCategory(categoryDto);
                        
-            return RedirectToAction("List");
+            return RedirectToAction("List")
+                .ShowMessage(JConfirmMessageType.Success,"Başarılı", "<b>Kategori</b> başarıyla eklendi.");
         }
 
         [HttpGet]
@@ -69,38 +71,26 @@ namespace Ilknur.Web.Controllers
         public IActionResult Edit(CategoryVM categoryVM)
         {
             if (!ModelState.IsValid)
-                return View(categoryVM);
+            {
+                return View(categoryVM)
+                    .ShowMessage(JConfirmMessageType.Warning,"Uyarı","Bazı hatalar var");                
+            }
+                
 
             var categoryDto = Categories.GetCategoryById(categoryVM.Id,isTracking:false);
             categoryDto.Name = categoryVM.Name;
             categoryDto.IsActive = categoryVM.IsActive;
            
             Categories.UpdateCategory(categoryDto);
-            return RedirectToAction("List");
+
+            return RedirectToAction("List")
+                .ShowMessage(JConfirmMessageType.Success,"İşlem başarılı","Kategori başarıyla güncellendi");
         }
 
         [HttpPost]
         [Route("Category/Delete")]
         public IActionResult Delete([FromBody]JQueryDeleteObject category)
         {
-            //if(!category.Id.HasValue)
-            //    return Json(new JsonResponse
-            //    {
-            //        Status = JsonResponseStatus.Error,
-            //        Message = "Silinecek kategori belirlenmemiş"
-            //    });
-
-            //var categoryInDb = Categories.GetCategoryById(category.Id, false);
-
-            //if (categoryInDb == null)
-            //{
-            //    return Json(new JsonResponse
-            //    {
-            //        Status = JsonResponseStatus.Error,
-            //        Message = "Silinecek kategori belirlenmemiş"
-            //    });
-            //}
-
             Categories.DeleteCategory(category.Id);
 
             return Json(new JsonResponse { 

@@ -1036,3 +1036,6 @@ D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.
 D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\ref\Ilknur.Web.dll
 D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\Ilknur.Web.pdb
 D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\Ilknur.Web.genruntimeconfig.cache
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\obj\Debug\net5.0\Razor\Views\Shared\_MessagePartial.cshtml.g.cs
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Kurslar\20 Şubat\14. Hafta\Uygulamalar\Ilknur.Web\Ilknur.Web\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
