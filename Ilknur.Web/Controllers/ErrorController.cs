@@ -53,6 +53,7 @@ namespace Ilknur.Web.Controllers
             //Hatayı veritabanına kaydet
             ErrorLogger.LogException(errorDto);
 
+            HttpContext.Response.StatusCode = 200;
 
             //Eğer istek ajax isteği ise
             if (errorDto.IsAjaxRequest)
