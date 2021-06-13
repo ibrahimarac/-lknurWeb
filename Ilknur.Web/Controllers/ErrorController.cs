@@ -53,6 +53,19 @@ namespace Ilknur.Web.Controllers
             //Hatayı veritabanına kaydet
             ErrorLogger.LogException(errorDto);
 
+
+            //Eğer istek ajax isteği ise
+            if (errorDto.IsAjaxRequest)
+            {
+                return Json(new JsonResponse
+                {
+                    Status=JsonResponseStatus.Error,
+                    Message="İşlem esnasında bir hata oluştu.",
+                    Result=errorDto
+                });
+            }
+            
+
             var errorVM = Mapper.Map<ErrorDto, ErrorVM>(errorDto);
             errorVM.Message = exceptionHandlerPath.Error.Message;
             

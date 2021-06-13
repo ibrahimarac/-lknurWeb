@@ -15,5 +15,7 @@ namespace Ilknur.Core.Services
         CategoryDto GetCategoryById(int? categoryId,bool isTracking=true);
 
         void UpdateCategory(CategoryDto categoryDto);
+
+        void DeleteCategory(int? categoryId);
     }
 }

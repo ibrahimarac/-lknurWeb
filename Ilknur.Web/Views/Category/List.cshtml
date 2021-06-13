@@ -36,9 +36,43 @@
                        class="btn btn-success">
                         <i class="fa fa-edit"></i>
                     </a>
-                    <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                    <a href="#" class="btn btn-danger" data-id="@item.Id">
+                        <i class="fa fa-trash"></i>
+                    </a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+@section Scripts{
+
+    <script>
+        $().ready(function () {
+            $(".btn-danger").click(function () {
+                var categoryId = $(this).data('id')
+                var reqData = {
+                    id: 50
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("Delete","Category")',
+                    data: JSON.stringify(reqData),
+                    contentType: 'application/json;charset=utf-8',
+                    dataType: 'json',
+                    success: function (result) {
+                        if (result.status == Status.Ok)
+                            alert(result.message)
+                    },
+                    error: function (result) {
+                        if (result.responseJSON.status == Status.Error)
+                            alert(result.responseJSON.message)
+                    }
+
+                })
+            })
+        })
+    </script>
+
+}

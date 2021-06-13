@@ -31,6 +31,18 @@ namespace Ilknur.Services.Services
             Database.Commit();
         }
 
+        public void DeleteCategory(int? categoryId)
+        {
+            if (!categoryId.HasValue)
+                throw new ParameterException("Id", "Category", "Kategori numarası gönderilmedi.");
+            var category = Database.CategoryRepo.GetById(categoryId.Value);
+            if (category == null)
+                throw new ParameterException("Id", "Category", "Gönderilen kategori numarası geçerli değil.");
+
+            Database.CategoryRepo.Delete(category);
+            Database.Commit();
+        }
+
         public async Task<IEnumerable<CategoryDto>> GetAllCategories()
         {
             var categories = await Database.CategoryRepo.GetAllAsync(false);

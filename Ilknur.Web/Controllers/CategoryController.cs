@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Ilknur.Core.Domain.Common;
 using Ilknur.Core.Domain.Dto;
 using Ilknur.Core.Services;
 using Ilknur.Web.Models.VM;
@@ -76,6 +77,36 @@ namespace Ilknur.Web.Controllers
            
             Categories.UpdateCategory(categoryDto);
             return RedirectToAction("List");
+        }
+
+        [HttpPost]
+        [Route("Category/Delete")]
+        public IActionResult Delete([FromBody]JQueryDeleteObject category)
+        {
+            //if(!category.Id.HasValue)
+            //    return Json(new JsonResponse
+            //    {
+            //        Status = JsonResponseStatus.Error,
+            //        Message = "Silinecek kategori belirlenmemiş"
+            //    });
+
+            //var categoryInDb = Categories.GetCategoryById(category.Id, false);
+
+            //if (categoryInDb == null)
+            //{
+            //    return Json(new JsonResponse
+            //    {
+            //        Status = JsonResponseStatus.Error,
+            //        Message = "Silinecek kategori belirlenmemiş"
+            //    });
+            //}
+
+            Categories.DeleteCategory(category.Id);
+
+            return Json(new JsonResponse { 
+                Status=JsonResponseStatus.Ok,
+                Message="Kategori başarıyla silindi"
+            });
         }
 
         

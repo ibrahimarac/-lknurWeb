@@ -1,4 +1,8 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+//JsonResponseStatus enum türüne karşılık gelen javascript
 
-// Write your JavaScript code.
+var Status = {
+    Ok: 1,
+    Error:2
+}
+
